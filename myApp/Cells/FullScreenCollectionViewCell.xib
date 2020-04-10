@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FullScreenCollectionViewCell" customModule="autolayout3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="226" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="226" height="177"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="COY-c9-hBT">
+                        <rect key="frame" x="0.0" y="0.0" width="226" height="177"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NBs-Xs-m3r">
+                                <rect key="frame" x="0.0" y="0.0" width="226" height="177"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NBs-Xs-m3r" firstAttribute="bottom" secondItem="b78-wB-uXu" secondAttribute="bottom" id="4Up-22-NBk"/>
+                            <constraint firstItem="NBs-Xs-m3r" firstAttribute="top" secondItem="b78-wB-uXu" secondAttribute="top" id="9oL-dj-QBe"/>
+                            <constraint firstItem="NBs-Xs-m3r" firstAttribute="leading" secondItem="b78-wB-uXu" secondAttribute="leading" id="Qb6-wn-xIg"/>
+                            <constraint firstAttribute="width" secondItem="NBs-Xs-m3r" secondAttribute="width" id="R8a-ff-qMJ"/>
+                            <constraint firstAttribute="height" secondItem="NBs-Xs-m3r" secondAttribute="height" id="ZbQ-Tt-hn2"/>
+                            <constraint firstItem="NBs-Xs-m3r" firstAttribute="trailing" secondItem="b78-wB-uXu" secondAttribute="trailing" id="c81-Mi-wCu"/>
+                        </constraints>
+                        <viewLayoutGuide key="contentLayoutGuide" id="lXD-5w-trx"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="b78-wB-uXu"/>
+                    </scrollView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="COY-c9-hBT" secondAttribute="bottom" id="Fca-bC-TUp"/>
+                <constraint firstItem="COY-c9-hBT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LA1-je-Yht"/>
+                <constraint firstAttribute="trailing" secondItem="COY-c9-hBT" secondAttribute="trailing" id="bZ2-eg-fAF"/>
+                <constraint firstItem="COY-c9-hBT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oCo-4l-hCE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="226" height="177"/>
+            <connections>
+                <outlet property="photoView" destination="NBs-Xs-m3r" id="MMA-Hb-JaN"/>
+                <outlet property="scrollView" destination="COY-c9-hBT" id="63b-uK-vty"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="33.816964285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>
